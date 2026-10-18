@@ -1,0 +1,133 @@
+
+
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>MINHO'S PHONE</title>
+
+<style>
+
+*{box-sizing:border-box}
+
+body{margin:0;background:#111;color:white;font-family:-apple-system,sans-serif}
+
+header{padding:55px 24px 25px;font-size:27px;font-weight:bold}
+
+small{color:#aaa;font-size:13px}
+
+.app{display:flex;align-items:center;gap:15px;padding:17px 22px;border-bottom:1px solid #292929;cursor:pointer}
+
+.icon{width:49px;height:49px;border-radius:14px;display:grid;place-items:center;font-size:25px}
+
+.green{background:#38a66b}.pink{background:#dc719b}.blue{background:#5489e8}.purple{background:#9565cf}
+
+.sub{color:#999;font-size:13px;margin-top:5px}
+
+#chat{display:none;padding:20px}
+
+button{background:#292929;color:white;border:0;border-radius:12px;padding:12px;font-size:15px}
+
+.bubble{padding:13px 15px;border-radius:18px;margin:12px 0;max-width:85%;background:#333;line-height:1.5}
+
+.me{margin-left:auto;background:#5489e8}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="home">
+
+<header>민호의 iPhone<br><small>10월 18일 · 일요일</small></header>
+
+<div class="app" onclick="openChat()">
+
+<div class="icon green">💬</div>
+
+<div><b>메시지</b><div class="sub">김승민 · 보고 싶다</div></div>
+
+</div>
+
+<div class="app" onclick="openChat()">
+
+<div class="icon pink">📷</div>
+
+<div><b>사진</b><div class="sub">최근 항목</div></div>
+
+</div>
+
+<div class="app" onclick="openChat()">
+
+<div class="icon purple">✉️</div>
+
+<div><b>DM</b><div class="sub">새 메시지 1개</div></div>
+
+</div>
+
+<div class="app" onclick="openChat()">
+
+<div class="icon blue">⚙️</div>
+
+<div><b>설정</b><div class="sub">일반</div></div>
+
+</div>
+
+</div>
+
+<div id="chat">
+
+<button onclick="goHome()">← 홈으로</button>
+
+<h2>💬 김승민</h2>
+
+<small>오늘 오후 3:24</small>
+
+<div class="bubble">야 이민호</div>
+
+<div class="bubble me">왜</div>
+
+<div class="bubble">나 보고 싶지</div>
+
+<div class="bubble me">안 보고 싶은데</div>
+
+<div class="bubble">그럼 나 지금 집 앞인데 돌아간다</div>
+
+<div class="bubble me">어디야 문 열어줄게</div>
+
+<div class="bubble">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</div>
+
+<div class="bubble me">빨리 와 자기야</div>
+
+</div>
+
+<script>
+
+function openChat(){
+
+document.getElementById('home').style.display='none';
+
+document.getElementById('chat').style.display='block';
+
+}
+
+function goHome(){
+
+document.getElementById('chat').style.display='none';
+
+document.getElementById('home').style.display='block';
+
+}
+
+</script>
+
+</body>
+
+</html>
